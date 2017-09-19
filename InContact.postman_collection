@@ -1,0 +1,197 @@
+{
+	"id": "ef2d0c8b-fe4c-757c-ff0c-a39e4a80ce52",
+	"name": "InContact",
+	"description": "",
+	"order": [
+		"196aeb24-3489-7d7d-ba77-6ebb0c37061f",
+		"35ad63e9-fee1-f63b-c787-931573c3eb54",
+		"adc3f2e4-e48c-6cf5-d979-83199e7f4647",
+		"877eef2b-096f-6371-bb2d-e9f4737fc46c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1505790102296,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "196aeb24-3489-7d7d-ba77-6ebb0c37061f",
+			"headers": "Authorization: basic U2tvcG9zU3lzdGVtQFNrb3Bvczo0NTk0NTk3\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "basic U2tvcG9zU3lzdGVtQFNrb3Bvczo0NTk0NTk3",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://api.incontact.com/InContactAuthorizationServer/Token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ef2d0c8b-fe4c-757c-ff0c-a39e4a80ce52",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505790110498,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{ \n\t\"grant_type\" : \"password\", \n\t\"username\" : \"Sean.Nelson@conduent.com\", \n\t\"password\" : \"Welcome01!\", \n    \"scope\" : \"\" \n }"
+		},
+		{
+			"id": "35ad63e9-fee1-f63b-c787-931573c3eb54",
+			"headers": "Authorization: bearer uvLP9xhu08D+B1FZA3M/b8jPBCIqipRAgUU1SMYWtPc7fvMqfThlwnx9+n/1oeWcfFwMV8QVqnBG+D28E66U1MssbpAX3ZCb0ghUiVtdAnj7Tfyyhmfosu5da+qGHl0CeRSPI8ObBerqBymG6INwYwRIEpONQS4RIiKPXL4I5NlSjA+sG3dPYFvHD6Pj0y7TVyah1biIx88PgPRvcv9mK6vv4fjmIUauFU7VCjr0PiawPMhYwJOLGocvV8rRR8EPnOMR+ViQ6vCnxBjsUlaqVngTgY43yOJ/G+2kGxhfslNBl5cO0DPRwPdq+z3HNcS6FNeRguqBAsAmKHHUkoOLYiBCemNQjg1whASwfyGgX23h1gFiCzxbjvEbk2Rbt4Wr24yV4wtfPBBS/wPdsUFvVg==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer uvLP9xhu08D+B1FZA3M/b8jPBCIqipRAgUU1SMYWtPc7fvMqfThlwnx9+n/1oeWcfFwMV8QVqnBG+D28E66U1MssbpAX3ZCb0ghUiVtdAnj7Tfyyhmfosu5da+qGHl0CeRSPI8ObBerqBymG6INwYwRIEpONQS4RIiKPXL4I5NlSjA+sG3dPYFvHD6Pj0y7TVyah1biIx88PgPRvcv9mK6vv4fjmIUauFU7VCjr0PiawPMhYwJOLGocvV8rRR8EPnOMR+ViQ6vCnxBjsUlaqVngTgY43yOJ/G+2kGxhfslNBl5cO0DPRwPdq+z3HNcS6FNeRguqBAsAmKHHUkoOLYiBCemNQjg1whASwfyGgX23h1gFiCzxbjvEbk2Rbt4Wr24yV4wtfPBBS/wPdsUFvVg==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://api-c13.incontact.com/inContactAPI/services/v10.0/agent-sessions?inactivityTimeout=300&inactivityForceLogout=false&stationPhoneNumber=4698556036",
+			"queryParams": [
+				{
+					"key": "inactivityTimeout",
+					"value": "300",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "inactivityForceLogout",
+					"value": "false",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "stationPhoneNumber",
+					"value": "4698556036",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ef2d0c8b-fe4c-757c-ff0c-a39e4a80ce52",
+			"data": null,
+			"dataMode": "params",
+			"name": "get sessionid",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505790969022,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "877eef2b-096f-6371-bb2d-e9f4737fc46c",
+			"headers": "Authorization: bearer uvLP9xhu08D+B1FZA3M/b8jPBCIqipRAgUU1SMYWtPc7fvMqfThlwnx9+n/1oeWcfFwMV8QVqnBG+D28E66U1MssbpAX3ZCb0ghUiVtdAnj7Tfyyhmfosu5da+qGHl0CeRSPI8ObBerqBymG6INwYwRIEpONQS4RIiKPXL4I5NlSjA+sG3dPYFvHD6Pj0y7TVyah1biIx88PgPRvcv9mK6vv4fjmIUauFU7VCjr0PiawPMhYwJOLGocvV8rRR8EPnOMR+ViQ6vCnxBjsUlaqVngTgY43yOJ/G+2kGxhfslNBl5cO0DPRwPdq+z3HNcS6FNeRguqBAsAmKHHUkoOLYiBCemNQjg1whASwfyGgX23h1gFiCzxbjvEbk2Rbt4Wr24yV4wtfPBBS/wPdsUFvVg==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer uvLP9xhu08D+B1FZA3M/b8jPBCIqipRAgUU1SMYWtPc7fvMqfThlwnx9+n/1oeWcfFwMV8QVqnBG+D28E66U1MssbpAX3ZCb0ghUiVtdAnj7Tfyyhmfosu5da+qGHl0CeRSPI8ObBerqBymG6INwYwRIEpONQS4RIiKPXL4I5NlSjA+sG3dPYFvHD6Pj0y7TVyah1biIx88PgPRvcv9mK6vv4fjmIUauFU7VCjr0PiawPMhYwJOLGocvV8rRR8EPnOMR+ViQ6vCnxBjsUlaqVngTgY43yOJ/G+2kGxhfslNBl5cO0DPRwPdq+z3HNcS6FNeRguqBAsAmKHHUkoOLYiBCemNQjg1whASwfyGgX23h1gFiCzxbjvEbk2Rbt4Wr24yV4wtfPBBS/wPdsUFvVg==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://api-c13.incontact.com/inContactAPI/services/v10.0/agent-sessions/OEZmdXN6ZjFEaVR1M3ZyR3dyZFQ0c25iWnlmcUhxeUhBZnluZ01GaVc0L1VVU0lsL25oRUduZz0%3D/dial-phone?phoneNumber=4698556036&skillId=1",
+			"queryParams": [
+				{
+					"key": "phoneNumber",
+					"value": "4698556036",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "skillId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ef2d0c8b-fe4c-757c-ff0c-a39e4a80ce52",
+			"data": null,
+			"dataMode": "params",
+			"name": "make phone call",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505792620394,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "adc3f2e4-e48c-6cf5-d979-83199e7f4647",
+			"headers": "Content-Type: application/json\nAuthorization: bearer uvLP9xhu08D+B1FZA3M/b8jPBCIqipRAgUU1SMYWtPc7fvMqfThlwnx9+n/1oeWcfFwMV8QVqnBG+D28E66U1MssbpAX3ZCb0ghUiVtdAnj7Tfyyhmfosu5da+qGHl0CeRSPI8ObBerqBymG6INwYwRIEpONQS4RIiKPXL4I5NlSjA+sG3dPYFvHD6Pj0y7TVyah1biIx88PgPRvcv9mK6vv4fjmIUauFU7VCjr0PiawPMhYwJOLGocvV8rRR8EPnOMR+ViQ6vCnxBjsUlaqVngTgY43yOJ/G+2kGxhfslNBl5cO0DPRwPdq+z3HNcS6FNeRguqBAsAmKHHUkoOLYiBCemNQjg1whASwfyGgX23h1gFiCzxbjvEbk2Rbt4Wr24yV4wtfPBBS/wPdsUFvVg==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer uvLP9xhu08D+B1FZA3M/b8jPBCIqipRAgUU1SMYWtPc7fvMqfThlwnx9+n/1oeWcfFwMV8QVqnBG+D28E66U1MssbpAX3ZCb0ghUiVtdAnj7Tfyyhmfosu5da+qGHl0CeRSPI8ObBerqBymG6INwYwRIEpONQS4RIiKPXL4I5NlSjA+sG3dPYFvHD6Pj0y7TVyah1biIx88PgPRvcv9mK6vv4fjmIUauFU7VCjr0PiawPMhYwJOLGocvV8rRR8EPnOMR+ViQ6vCnxBjsUlaqVngTgY43yOJ/G+2kGxhfslNBl5cO0DPRwPdq+z3HNcS6FNeRguqBAsAmKHHUkoOLYiBCemNQjg1whASwfyGgX23h1gFiCzxbjvEbk2Rbt4Wr24yV4wtfPBBS/wPdsUFvVg==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://api-c13.incontact.com/inContactAPI/services/v10.0/agent-sessions/OEZmdXN6ZjFEaVR1M3ZyR3dyZFQ0c25iWnlmcUhxeUhBZnluZ01GaVc0L1VVU0lsL25oRUduZz0%3D/state?state=Available",
+			"queryParams": [
+				{
+					"key": "state",
+					"value": "Available",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ef2d0c8b-fe4c-757c-ff0c-a39e4a80ce52",
+			"data": [],
+			"dataMode": "raw",
+			"name": "set agent state",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505792219768,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		}
+	]
+}
